@@ -1,0 +1,21 @@
+---
+galaxy_info:
+  author: Jim Tarpley
+  namespace: trippsc2
+  role_name: rhel
+  description: This role performs first steps on a freshly installed RHEL-based system.
+
+  license: MIT
+
+  min_ansible_version: '2.14'
+
+  platforms:
+    - name: EL
+      versions:
+        - '8'
+        - '9'
+
+collections:
+  - ansible.posix
+
+dependencies: []

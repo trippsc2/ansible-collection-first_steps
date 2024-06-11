@@ -1,0 +1,14 @@
+---
+argument_specs:
+  main:
+    short_description: Debian First Steps
+    description:
+      - This role performs first steps on a freshly installed Debian system.
+    author: Jim Tarpley
+    options:
+      debian_is_workstation:
+        type: bool
+        required: false
+        default: false
+        description:
+          - Whether the system is a workstation and should start a graphical environment.

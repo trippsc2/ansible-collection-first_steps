@@ -1,0 +1,14 @@
+---
+argument_specs:
+  main:
+    short_description: Ubuntu First Steps
+    description:
+      - This role performs first steps on a freshly installed Ubuntu system.
+    author: Jim Tarpley
+    options:
+      ubuntu_is_workstation:
+        type: bool
+        required: false
+        default: false
+        description:
+          - Whether the system is a workstation and should start a graphical environment.

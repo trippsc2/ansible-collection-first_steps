@@ -1,0 +1,50 @@
+---
+argument_specs:
+  main:
+    short_description: RHEL First Steps
+    description:
+      - This role performs first steps on a freshly installed RHEL-based system.
+    author: Jim Tarpley
+    options:
+      rhel_red_hat_username:
+        type: str
+        required: false
+        description:
+          - Red Hat subscription username.
+          - Required for RHEL only.
+      rhel_red_hat_password:
+        type: str
+        required: false
+        description:
+          - Red Hat subscription password.
+          - Required for RHEL only.
+      rhel_subscription_auto_attach:
+        type: bool
+        required: false
+        description:
+          - Auto attach subscription.
+          - Required for RHEL only.
+      rhel_subscription_syspurpose_usage:
+        type: str
+        required: false
+        description:
+          - System purpose usage.
+          - Required for RHEL only.
+      rhel_subscription_syspurpose_service_level_agreement:
+        type: str
+        required: false
+        description:
+          - System purpose service level agreement.
+          - Required for RHEL only.
+      rhel_subscription_syspurpose_sync:
+        type: bool
+        required: false
+        description:
+          - System purpose sync.
+          - Required for RHEL only.
+      rhel_subscription_pool:
+        type: str
+        required: false
+        description:
+          - Subscription pool.
+          - Required for RHEL only.

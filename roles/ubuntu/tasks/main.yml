@@ -1,0 +1,57 @@
+---
+- name: Check if Ubuntu distribution
+  ansible.builtin.assert:
+    that:
+      - ansible_distribution == "Ubuntu"
+
+- name: Disable hibernation
+  loop:
+    - sleep.target
+    - suspend.target
+    - hibernate.target
+    - hybrid-sleep.target
+  become: true
+  ansible.builtin.systemd_service:
+    name: "{{ item }}"
+    state: stopped
+    enabled: false
+    masked: true
+
+- name: Reduce swappiness to 0
+  become: true
+  ansible.posix.sysctl:
+    name: vm.swappiness
+    value: '0'
+    state: present
+    reload: true
+
+- name: Update all packages
+  become: true
+  ansible.builtin.apt:
+    name: '*'
+    state: latest
+    update_cache: true
+  tags:
+    - always
+    - skip_ansible_lint
+
+- name: Change to graphical target
+  when:
+    - ubuntu_is_workstation
+  block:
+    - name: Get current default target
+      become: true
+      check_mode: false
+      ansible.builtin.command: systemctl get-default
+      register: _ubuntu_default_target
+      changed_when: false
+      tags:
+        - always
+        - skip_ansible_lint
+
+    - name: Set graphical target
+      when:
+        - "'graphical' not in _ubuntu_default_target.stdout"
+      become: true
+      ansible.builtin.command: systemctl set-default graphical.target
+      changed_when: true
