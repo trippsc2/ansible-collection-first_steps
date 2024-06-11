@@ -9,7 +9,7 @@ This role performs first steps on a freshly installed Ubuntu system.
 
 | Platform | Versions |
 | -------- | -------- |
-| Ubuntu | focal, jammy, noble |
+| Ubuntu | <ul><li>focal</li><li>jammy</li><li>noble</li></ul> |
 
 ## Dependencies
 

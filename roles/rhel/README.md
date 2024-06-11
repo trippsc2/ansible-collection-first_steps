@@ -9,13 +9,14 @@ This role performs first steps on a freshly installed RHEL-based system.
 
 | Platform | Versions |
 | -------- | -------- |
-| EL | 8, 9 |
+| EL | <ul><li>8</li><li>9</li></ul> |
 
 ## Dependencies
 
 | Collection |
 | ---------- |
 | ansible.posix |
+| community.general |
 
 ## Role Arguments
 |Option|Description|Type|Required|Choices|Default|

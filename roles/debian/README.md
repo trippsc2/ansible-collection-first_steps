@@ -9,7 +9,7 @@ This role performs first steps on a freshly installed Debian system.
 
 | Platform | Versions |
 | -------- | -------- |
-| Debian | bullseye, bookworm |
+| Debian | <ul><li>bullseye</li><li>bookworm</li></ul> |
 
 ## Dependencies
 
