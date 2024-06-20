@@ -20,7 +20,7 @@ This role performs first steps on a freshly installed Ubuntu system.
 ## Role Arguments
 |Option|Description|Type|Required|Choices|Default|
 |---|---|---|---|---|---|
-| ubuntu_is_workstation | Whether the system is a workstation and should start a graphical environment. | bool | no |  | false |
+| ubuntu_is_workstation | <p>Whether the system is a workstation and should start a graphical environment.</p> | bool | no |  | false |
 
 
 ## License
