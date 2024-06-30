@@ -4,6 +4,13 @@
     that:
       - ansible_distribution == "Ubuntu"
 
+- name: Remove unattended upgrades package
+  become: true
+  ansible.builtin.apt:
+    name: 
+      - unattended-upgrades
+    state: absent
+
 - name: Disable hibernation
   loop:
     - sleep.target
