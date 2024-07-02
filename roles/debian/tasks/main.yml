@@ -11,6 +11,13 @@
       - firewalld
     state: present
 
+- name: Install GPG utility
+  become: true
+  ansible.builtin.package:
+    name:
+      - gnupg
+    state: present
+
 - name: Disable hibernation
   loop:
     - sleep.target

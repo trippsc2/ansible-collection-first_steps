@@ -11,6 +11,13 @@
       - unattended-upgrades
     state: absent
 
+- name: Install GPG utility
+  become: true
+  ansible.builtin.package:
+    name:
+      - gnupg
+    state: present
+
 - name: Disable hibernation
   loop:
     - sleep.target
