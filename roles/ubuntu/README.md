@@ -1,7 +1,7 @@
 <!-- BEGIN_ANSIBLE_DOCS -->
 
 # Ansible Role: trippsc2.first_steps.ubuntu
-Version: 1.0.4
+Version: 1.0.5
 
 This role performs first steps on a freshly installed Ubuntu system.
 

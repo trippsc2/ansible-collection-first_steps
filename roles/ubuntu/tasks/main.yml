@@ -18,6 +18,13 @@
       - gnupg
     state: present
 
+- name: Install ssl-cert package
+  become: true
+  ansible.builtin.package:
+    name:
+      - ssl-cert
+    state: present
+
 - name: Disable hibernation
   loop:
     - sleep.target
