@@ -4,13 +4,6 @@
     that:
       - ansible_distribution == "Debian"
 
-- name: Install firewalld
-  become: true
-  ansible.builtin.package:
-    name:
-      - firewalld
-    state: present
-
 - name: Install GPG utility
   become: true
   ansible.builtin.package:
@@ -18,7 +11,18 @@
       - gnupg
     state: present
 
+- name: Install firewalld
+  when:
+    - debian_install_firewalld
+  become: true
+  ansible.builtin.package:
+    name:
+      - firewalld
+    state: present
+
 - name: Install ssl-cert package
+  when:
+    - debian_install_ssl_cert
   become: true
   ansible.builtin.package:
     name:
@@ -55,24 +59,3 @@
   tags:
     - always
     - skip_ansible_lint
-
-- name: Change to graphical target
-  when:
-    - debian_is_workstation
-  block:
-    - name: Get current default target
-      become: true
-      check_mode: false
-      ansible.builtin.command: systemctl get-default
-      register: _debian_default_target
-      changed_when: false
-      tags:
-        - always
-        - skip_ansible_lint
-
-    - name: Set graphical target
-      when:
-        - "'graphical' not in _debian_default_target.stdout"
-      become: true
-      ansible.builtin.command: systemctl set-default graphical.target
-      changed_when: true

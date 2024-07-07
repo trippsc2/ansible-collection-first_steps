@@ -1,2 +1,2 @@
 ---
-ubuntu_is_workstation: false
+ubuntu_install_ssl_cert: true

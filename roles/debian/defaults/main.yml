@@ -1,2 +1,3 @@
 ---
-debian_is_workstation: false
+debian_install_firewalld: true
+debian_install_ssl_cert: true

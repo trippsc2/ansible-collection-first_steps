@@ -19,6 +19,8 @@
     state: present
 
 - name: Install ssl-cert package
+  when:
+    - ubuntu_install_ssl_cert
   become: true
   ansible.builtin.package:
     name:
@@ -55,24 +57,3 @@
   tags:
     - always
     - skip_ansible_lint
-
-- name: Change to graphical target
-  when:
-    - ubuntu_is_workstation
-  block:
-    - name: Get current default target
-      become: true
-      check_mode: false
-      ansible.builtin.command: systemctl get-default
-      register: _ubuntu_default_target
-      changed_when: false
-      tags:
-        - always
-        - skip_ansible_lint
-
-    - name: Set graphical target
-      when:
-        - "'graphical' not in _ubuntu_default_target.stdout"
-      become: true
-      ansible.builtin.command: systemctl set-default graphical.target
-      changed_when: true

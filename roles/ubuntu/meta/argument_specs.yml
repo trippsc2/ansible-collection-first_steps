@@ -6,9 +6,9 @@ argument_specs:
       - This role performs first steps on a freshly installed Ubuntu system.
     author: Jim Tarpley
     options:
-      ubuntu_is_workstation:
+      ubuntu_install_ssl_cert:
         type: bool
         required: false
-        default: false
+        default: true
         description:
-          - Whether the system is a workstation and should start a graphical environment.
+          - Whether to install the ssl-cert package.

@@ -8,6 +8,7 @@
       - '!all'
       - '!min'
       - distribution
+      - os_family
 
 - name: Check if RHEL based distribution
   ansible.builtin.assert:

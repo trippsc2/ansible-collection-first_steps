@@ -1,7 +1,7 @@
 <!-- BEGIN_ANSIBLE_DOCS -->
 
 # Ansible Role: trippsc2.first_steps.debian
-Version: 1.0.5
+Version: 1.0.6
 
 This role performs first steps on a freshly installed Debian system.
 
@@ -20,7 +20,8 @@ This role performs first steps on a freshly installed Debian system.
 ## Role Arguments
 |Option|Description|Type|Required|Choices|Default|
 |---|---|---|---|---|---|
-| debian_is_workstation | <p>Whether the system is a workstation and should start a graphical environment.</p> | bool | no |  | false |
+| debian_install_firewalld | <p>Whether to install the firewalld package.</p> | bool | no |  | true |
+| debian_install_ssl_cert | <p>Whether to install the ssl-cert package.</p> | bool | no |  | true |
 
 
 ## License
