@@ -1,7 +1,7 @@
 <!-- BEGIN_ANSIBLE_DOCS -->
 
 # Ansible Role: trippsc2.first_steps.debian
-Version: 1.0.8
+Version: 1.0.9
 
 This role performs first steps on a freshly installed Debian system.
 

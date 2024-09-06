@@ -15,6 +15,7 @@ argument_specs:
       rhel_red_hat_password:
         type: str
         required: false
+        no_log: true
         description:
           - Red Hat subscription password.
           - Required for RHEL only.
