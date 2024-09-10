@@ -43,9 +43,3 @@ argument_specs:
         description:
           - System purpose sync.
           - Required for RHEL only.
-      rhel_subscription_pool:
-        type: str
-        required: false
-        description:
-          - Subscription pool.
-          - Required for RHEL only.

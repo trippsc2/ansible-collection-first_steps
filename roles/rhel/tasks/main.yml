@@ -14,6 +14,8 @@
   ansible.builtin.assert:
     that:
       - ansible_os_family == "RedHat"
+    fail_msg: "This role is only supported on RHEL based distributions."
+    success_msg: "This role is supported on RHEL based distributions."
 
 - name: Install RHEL subscription
   when:
@@ -28,7 +30,6 @@
       usage: "{{ rhel_subscription_syspurpose_usage }}"
       service_level_agreement: "{{ rhel_subscription_syspurpose_service_level_agreement }}"
       sync: "{{ rhel_subscription_syspurpose_sync }}"
-    pool: "{{ rhel_subscription_pool }}"
 
 - name: Install SETroubleshoot package
   become: true
