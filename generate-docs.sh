@@ -2,12 +2,12 @@
 
 cd ./roles/debian
 
-aar_doc . markdown
+aar-doc . markdown
 
 cd ../rhel
 
-aar_doc . markdown
+aar-doc . markdown
 
 cd ../ubuntu
 
-aar_doc . markdown
+aar-doc . markdown

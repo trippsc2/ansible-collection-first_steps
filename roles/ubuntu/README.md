@@ -1,7 +1,7 @@
 <!-- BEGIN_ANSIBLE_DOCS -->
 
 # Ansible Role: trippsc2.first_steps.ubuntu
-Version: 1.0.10
+Version: 1.0.11
 
 This role performs first steps on a freshly installed Ubuntu system.
 
@@ -20,7 +20,7 @@ This role performs first steps on a freshly installed Ubuntu system.
 ## Role Arguments
 |Option|Description|Type|Required|Choices|Default|
 |---|---|---|---|---|---|
-| ubuntu_install_ssl_cert | <p>Whether to install the ssl-cert package.</p> | bool | no |  | true |
+| ubuntu_install_ssl_cert | <p>Whether to install the ssl-cert package.</p> | bool | no |  | True |
 
 
 ## License
