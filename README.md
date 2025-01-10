@@ -7,5 +7,6 @@ This collection contains roles for performing first steps on freshly deployed ma
 ### Roles
 
 - [debian](roles/debian/README.md) - This role performs first steps on a freshly installed Debian system.
+- [fedora](roles/fedora/README.md) - This role performs first steps on a freshly installed Fedora system.
 - [rhel](roles/rhel/README.md) - This role performs first steps on a freshly installed RHEL-based system.
 - [ubuntu](roles/ubuntu/README.md) - This role performs first steps on a freshly installed Ubuntu system.

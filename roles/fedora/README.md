@@ -1,26 +1,26 @@
 <!-- BEGIN_ANSIBLE_DOCS -->
 
-# Ansible Role: trippsc2.first_steps.ubuntu
+# Ansible Role: trippsc2.first_steps.fedora
 Version: 1.1.0
 
-This role performs first steps on a freshly installed Ubuntu system.
+This role performs first steps on a freshly installed Fedora system.
 
 ## Requirements
 
 | Platform | Versions |
 | -------- | -------- |
-| Ubuntu | <ul><li>focal</li><li>jammy</li><li>noble</li></ul> |
+| Fedora | <ul></ul> |
 
 ## Dependencies
 
 | Collection |
 | ---------- |
 | ansible.posix |
+| community.general |
 
 ## Role Arguments
 |Option|Description|Type|Required|Choices|Default|
 |---|---|---|---|---|---|
-| ubuntu_install_ssl_cert | <p>Whether to install the ssl-cert package.</p> | bool | no |  | True |
 
 
 ## License

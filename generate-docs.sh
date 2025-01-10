@@ -4,6 +4,10 @@ cd ./roles/debian
 
 aar-doc . markdown
 
+cd ../fedora
+
+aar-doc . markdown
+
 cd ../rhel
 
 aar-doc . markdown

@@ -1,0 +1,19 @@
+---
+galaxy_info:
+  author: Jim Tarpley
+  namespace: trippsc2
+  role_name: rhel
+  description: This role performs first steps on a freshly installed Fedora system.
+
+  license: MIT
+
+  min_ansible_version: '2.15'
+
+  platforms:
+    - name: Fedora
+
+collections:
+  - ansible.posix
+  - community.general
+
+dependencies: []

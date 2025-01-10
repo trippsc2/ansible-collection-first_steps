@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0] - 2025-01-10
+
+### Collection
+
+- *fedora* role added.
+
 ## [1.0.11] - 2025-01-08
 
 ### Collection
