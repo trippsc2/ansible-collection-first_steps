@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.1] - 2025-01-10
+
+### Role - fedora
+
+- Fixed path to `/etc/dnf/dnf.conf` config file.
+
 ## [1.1.0] - 2025-01-10
 
 ### Collection

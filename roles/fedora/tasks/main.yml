@@ -38,7 +38,7 @@
 - name: Configure dnf to keep only 2 kernel versions
   become: true
   ansible.builtin.lineinfile:
-    path: /etc/dnf.conf
+    path: /etc/dnf/dnf.conf
     regexp: '^installonly_limit='
     line: 'installonly_limit=2'
     state: present
