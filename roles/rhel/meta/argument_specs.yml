@@ -4,7 +4,7 @@ argument_specs:
     short_description: RHEL First Steps
     description:
       - This role performs first steps on a freshly installed RHEL-based system.
-    author: Jim Tarpley
+    author: Jim Tarpley (@trippsc2)
     options:
       rhel_red_hat_username:
         type: str

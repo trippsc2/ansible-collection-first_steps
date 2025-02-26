@@ -4,7 +4,7 @@ argument_specs:
     short_description: Debian First Steps
     description:
       - This role performs first steps on a freshly installed Debian system.
-    author: Jim Tarpley
+    author: Jim Tarpley (@trippsc2)
     options:
       debian_install_firewalld:
         type: bool

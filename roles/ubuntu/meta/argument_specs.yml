@@ -4,7 +4,7 @@ argument_specs:
     short_description: Ubuntu First Steps
     description:
       - This role performs first steps on a freshly installed Ubuntu system.
-    author: Jim Tarpley
+    author: Jim Tarpley (@trippsc2)
     options:
       ubuntu_install_ssl_cert:
         type: bool
