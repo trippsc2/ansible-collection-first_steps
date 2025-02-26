@@ -4,7 +4,7 @@ name: first_steps
 version: 1.1.1
 readme: README.md
 authors:
-  - Jim Tarpley
+  - Jim Tarpley (@trippsc2)
 description: This collection contains roles for performing first steps on freshly deployed machines.
 
 license_file: 'LICENSE'
