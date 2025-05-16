@@ -12,8 +12,8 @@ galaxy_info:
   platforms:
     - name: EL
       versions:
-        - '8'
         - '9'
+        - '8'
 
 collections:
   - ansible.posix

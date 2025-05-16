@@ -1,7 +1,7 @@
 <!-- BEGIN_ANSIBLE_DOCS -->
 
 # Ansible Role: trippsc2.first_steps.rhel
-Version: 1.1.1
+Version: 1.1.2
 
 This role performs first steps on a freshly installed RHEL-based system.
 
@@ -9,7 +9,7 @@ This role performs first steps on a freshly installed RHEL-based system.
 
 | Platform | Versions |
 | -------- | -------- |
-| EL | <ul><li>8</li><li>9</li></ul> |
+| EL | <ul><li>9</li><li>8</li></ul> |
 
 ## Dependencies
 
@@ -33,5 +33,5 @@ This role performs first steps on a freshly installed RHEL-based system.
 MIT
 
 ## Author and Project Information
-Jim Tarpley
+Jim Tarpley (@trippsc2)
 <!-- END_ANSIBLE_DOCS -->

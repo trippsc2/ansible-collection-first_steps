@@ -1,7 +1,7 @@
 <!-- BEGIN_ANSIBLE_DOCS -->
 
 # Ansible Role: trippsc2.first_steps.debian
-Version: 1.1.1
+Version: 1.1.2
 
 This role performs first steps on a freshly installed Debian system.
 
@@ -9,7 +9,7 @@ This role performs first steps on a freshly installed Debian system.
 
 | Platform | Versions |
 | -------- | -------- |
-| Debian | <ul><li>bullseye</li><li>bookworm</li></ul> |
+| Debian | <ul><li>bookworm</li></ul> |
 
 ## Dependencies
 
@@ -28,5 +28,5 @@ This role performs first steps on a freshly installed Debian system.
 MIT
 
 ## Author and Project Information
-Jim Tarpley
+Jim Tarpley (@trippsc2)
 <!-- END_ANSIBLE_DOCS -->

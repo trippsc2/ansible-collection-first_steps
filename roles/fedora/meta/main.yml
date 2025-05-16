@@ -11,6 +11,8 @@ galaxy_info:
 
   platforms:
     - name: Fedora
+      versions:
+        - all
 
 collections:
   - ansible.posix

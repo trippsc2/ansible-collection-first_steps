@@ -1,7 +1,7 @@
 <!-- BEGIN_ANSIBLE_DOCS -->
 
 # Ansible Role: trippsc2.first_steps.fedora
-Version: 1.1.1
+Version: 1.1.2
 
 This role performs first steps on a freshly installed Fedora system.
 
@@ -9,7 +9,7 @@ This role performs first steps on a freshly installed Fedora system.
 
 | Platform | Versions |
 | -------- | -------- |
-| Fedora | <ul></ul> |
+| Fedora | <ul><li>all</li></ul> |
 
 ## Dependencies
 
@@ -27,5 +27,5 @@ This role performs first steps on a freshly installed Fedora system.
 MIT
 
 ## Author and Project Information
-Jim Tarpley
+Jim Tarpley (@trippsc2)
 <!-- END_ANSIBLE_DOCS -->

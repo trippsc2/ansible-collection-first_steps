@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.2] - 2025-05-16
+
+### Role - debian
+
+- Removed `bullseye` from metadata.
+
+### Role - fedora
+
+- Added `all` versions to metadata.
+
+### Role - rhel
+
+- Reordered versions in metadata.
+
+### Role - ubuntu
+
+- Reordered versions in metadata.
+
 ## [1.1.1] - 2025-01-10
 
 ### Role - fedora
