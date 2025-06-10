@@ -7,6 +7,22 @@ name: Generate Role Docs
       - main
     paths:
       - galaxy.yml
+      - roles/debian/.aar_doc.yml
+      - roles/debian/README.md
+      - roles/debian/meta/argument_specs.yml
+      - roles/debian/meta/main.yml
+      - roles/fedora/.aar_doc.yml
+      - roles/fedora/README.md
+      - roles/fedora/meta/argument_specs.yml
+      - roles/fedora/meta/main.yml
+      - roles/rhel/.aar_doc.yml
+      - roles/rhel/README.md
+      - roles/rhel/meta/argument_specs.yml
+      - roles/rhel/meta/main.yml
+      - roles/ubuntu/.aar_doc.yml
+      - roles/ubuntu/README.md
+      - roles/ubuntu/meta/argument_specs.yml
+      - roles/ubuntu/meta/main.yml
 defaults:
   run:
     working-directory: 'trippsc2.first_steps'
