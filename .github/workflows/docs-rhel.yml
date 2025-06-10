@@ -1,0 +1,24 @@
+---
+name: Generate Role Docs - rhel role
+'on':
+  workflow_dispatch: {}
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/docs-rhel.yml
+      - roles/rhel/.aar_doc.yml
+      - roles/rhel/meta/argument_specs.yml
+      - roles/rhel/meta/main.yml
+defaults:
+  run:
+    working-directory: 'trippsc2.first_steps'
+jobs:
+  docs:
+    name: Generate rhel role documentation
+    permissions:
+      contents: write
+    uses: trippsoft/github-actions/.github/workflows/role-docs.yml@main
+    with:
+      working_directory: 'trippsc2.first_steps'
+      role_name: 'rhel'

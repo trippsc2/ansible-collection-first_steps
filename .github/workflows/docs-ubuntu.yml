@@ -1,0 +1,24 @@
+---
+name: Generate Role Docs - ubuntu role
+'on':
+  workflow_dispatch: {}
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/docs-ubuntu.yml
+      - roles/ubuntu/.aar_doc.yml
+      - roles/ubuntu/meta/argument_specs.yml
+      - roles/ubuntu/meta/main.yml
+defaults:
+  run:
+    working-directory: 'trippsc2.first_steps'
+jobs:
+  docs:
+    name: Generate ubuntu role documentation
+    permissions:
+      contents: write
+    uses: trippsoft/github-actions/.github/workflows/role-docs.yml@main
+    with:
+      working_directory: 'trippsc2.first_steps'
+      role_name: 'ubuntu'
